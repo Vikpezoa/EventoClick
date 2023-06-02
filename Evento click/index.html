@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento click</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head> 
+    <body>
+        <!-- contenedor superior de navegación -->
+        <header>
+            <h1 id="titulo-header">Dojonary</h1>
+            <div>
+                <input class="buscador" type="text" placeholder="Buscar">
+            </div>
+            <div>
+                <button id="btnSesion" onclick="cambiarBtn()">Login</button>
+            </div>
+        </header>
+        <main>
+            <!-- contenedor superior derecho -->
+            <div class="recuadrosNinjaIzq">
+                <div class="ninjaSup">
+                    <!-- se divide en: columna izquierda y columna derecha -->
+                    <div class="columnaNinjaIzq">
+                        <ul>
+                            <li>
+                                <h1>ninja</h1>
+                            </li>
+                            <li>
+                                <em>noun</em>
+                            </li>
+                            <li>
+                                Plural:<em>ninjas</em>
+                            </li>
+                            <li>
+                                <button class="btn-like" onclick="contarLikes(this)", onclick="alerta()"><span class="cant-likes">13</span> likes</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="columnaNinjaDer">
+                        A practitioner skilled in the <a href="#"> Japanese </a> art of <a href="#"> ninjitsu.</a>
+                    </p> 
+                </div>    
+                <!-- contenedor inferior derecho -->
+                <div class="ninjaInf">  
+                    <div class="columnaNinjaIzq">
+                        <ul>
+                            <li>
+                                <h1>ninja</h1>
+                            </li>
+                            <li>
+                                <em>noun</em>
+                            </li>
+                            <li>
+                                Plural:<em>ninjas</em>
+                            </li>
+                            <li>
+                                <button class="btn-like" onclick="contarLikes(this)" onclick="alerta()"><span class="cant-likes">37</span> likes</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="columnaNinjaDer">
+                        A <a href="#"> programmer </a> who breaks down problems with <a href="#"> zen</a>-like focus.
+                    </p>
+                </div>
+            </div>
+            <!-- tercer recuadro -->
+            <div class="recuadroNinjaDer">   
+                <h3>Dojonary is defined by YOU</h3>
+                <div>
+                <button class="btn-definition" onclick="removerBtn(this)">Add Definition</button>
+                </div>
+            </div>
+        </main>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
